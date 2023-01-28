@@ -1,38 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  width: 1920px;
+  height: 1080px;
+  background: linear-gradient(90deg, #FEDCC5 0%, #FEDDC6 100%);
+  border-radius: 15px;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rightChicken {
+  position: absolute;
+  width: 948px;
+  height: 834px;
+  left: 872px;
+  top: 123px;
+  background-image: url(./images/rightchicken.png);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logincontainer {
+  position: absolute;
+  width: 641px;
+  height: 835px;
+  left: calc(50% - 641px/2 - 509.5px);
+  top: calc(50% - 835px/2 - 0.5px);
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+
+  border-radius: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.yourlogo {
+  position: absolute;
+  width: auto;
+  height: 29px;
+  top: 120px;
+  left: 121px;
+  font-size: 24px;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  color: #F25019;
 }
 
-.App-link {
-  color: #61dafb;
+.loginheader {
+  position: absolute;
+  width: 96px;
+  height: 46px;
+  top: 162px;
+  left: 121px;
+  font-size: 38px;
+  display: flex;
+  align-items: center;
+  color: #2A1E17;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.email {
+  position: absolute;
+  width: 34px;
+  height: 16px;
+  top: 236px;
+  left: 121px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #2A1E17;
+}
+
+.emailinput {
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  top: 260px;
+  left: 121px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  padding-left: 20px;
+}
+
+.password {
+  position: absolute;
+  width: 61px;
+  height: 16px;
+  top: 342px;
+  left: 121px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+
+  color: #2A1E17;
+}
+
+.passwordinput {
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  top: 366px;
+  left: 121px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  padding-left: 20px;
+}
+
+.forgotpassword {
+  position: absolute;
+  width: 98px;
+  height: 14px;
+  top: 433px;
+  left: 121px;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #2A1E17;
+}
+
+.signin {
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  top: 489px;
+  left: 121px;
+  background: #F25019;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.orcontinue {
+  position: absolute;
+  width: 103px;
+  height: 16px;
+  top: 584px;
+  left: 270px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2A1E17;
+}
+
+.loginbtncontainer {
+  position: absolute;
+  top: 616px;
+  left: 121px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.google {
+  border: 1px solid black;
+  width: 125px;
+  height: 50px;
+  background-image: url('./images/google.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.facebook {
+  border: 1px solid black;
+  width: 125px;
+  height: 50px;
+  background-image: url('./images/facebook.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.github {
+  border: 1px solid black;
+  width: 125px;
+  height: 50px;
+  background-image: url('./images/github.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.registerforfree {
+  position: absolute;
+  top: 698px;
+  left: 159px;
+  width: 286px;
+  height: auto;
+  font-size: 14px;
+}
+
+.leftChicken {
+  position: absolute;
+  width: 1717.72px;
+  height: 1512.39px;
+  opacity: .5;
+  filter: blur(5px);
+  background-image: url('./images/leftchicken.png');
+  background-repeat: no-repeat;
 }

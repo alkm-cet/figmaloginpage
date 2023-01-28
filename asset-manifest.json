@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/figmaloginpage/static/css/main.0ed059e6.css",
+    "main.js": "/figmaloginpage/static/js/main.1755d2aa.js",
+    "static/js/787.73461289.chunk.js": "/figmaloginpage/static/js/787.73461289.chunk.js",
+    "static/media/leftchicken.png": "/figmaloginpage/static/media/leftchicken.3149f05c6614808422b5.png",
+    "static/media/rightchicken.png": "/figmaloginpage/static/media/rightchicken.e248cdd12540accd0040.png",
+    "index.html": "/figmaloginpage/index.html",
+    "main.0ed059e6.css.map": "/figmaloginpage/static/css/main.0ed059e6.css.map",
+    "main.1755d2aa.js.map": "/figmaloginpage/static/js/main.1755d2aa.js.map",
+    "787.73461289.chunk.js.map": "/figmaloginpage/static/js/787.73461289.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ed059e6.css",
+    "static/js/main.1755d2aa.js"
+  ]
+}
